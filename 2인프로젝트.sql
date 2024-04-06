@@ -1,5 +1,11 @@
 ------------------------------------
------------- ≈◊¿Ã∫Ì ªË¡¶ ------------
+------------ ÏãúÌÄÄÏä§ ÏÇ≠Ï†ú ------------
+------------------------------------
+
+
+
+------------------------------------
+------------ ÌÖåÏù¥Î∏î ÏÇ≠Ï†ú ------------
 ------------------------------------
 DROP TABLE USERS CASCADE CONSTRAINTS;
 DROP TABLE ADMIN CASCADE CONSTRAINTS;
@@ -15,8 +21,14 @@ DROP TABLE DAY_MISSION CASCADE CONSTRAINTS;
 DROP TABLE MISSION CASCADE CONSTRAINTS;
 
 
+
 ------------------------------------
------------- ≈◊¿Ã∫Ì ª˝º∫ ------------
+------------ ÏãúÌÄÄÏä§ ÏÉùÏÑ± ------------
+------------------------------------
+
+
+------------------------------------
+------------ ÌÖåÏù¥Î∏î ÏÉùÏÑ± ------------
 ------------------------------------
 CREATE TABLE UESRS (
 	NICK	            VARCHAR2(30)	CONSTRAINT PK_USERS_NICK PRIMARY KEY CONSTRAINT NN_USERS_NICK NOT NULL CONSTRAINT UQ_USERS_NICK UNIQUE
@@ -34,7 +46,7 @@ CREATE TABLE UESRS (
 );
 
 CREATE TABLE ADMIN (
-	ADMIN_NICK	    VARCHAR2(30)	DEFAULT 'øÓøµ¿⁄' CONSTRAINT PK_ADMIN_NICK PRIMARY KEY 
+	ADMIN_NICK	    VARCHAR2(30)	DEFAULT 'Ïö¥ÏòÅÏûê' CONSTRAINT PK_ADMIN_NICK PRIMARY KEY 
 	, ID	        VARCHAR2(30)	CONSTRAINT NN_ADMIN_ID NOT NULL CONSTRAINT UQ_ADMIN_ID UNIQUE 
 	, PWD1	        VARCHAR2(30)	CONSTRAINT NN_ADMIN_PWD1 NOT NULL
 	, PWD2	        VARCHAR2(30)	CONSTRAINT NN_ADMIN_PWD2 NOT NULL
@@ -70,3 +82,10 @@ CREATE TABLE TEAM_MISSION (
 	, TEAM_POINT	NUMBER	        DEFAULT 0 CONSTRAINT NN_TEAM_MISSION_TEAM_POINT NOT NULL
 	, REWARD	    VARCHAR2(300)	NULL
 );
+
+
+------------------------------------
+------------ Ïô∏ÎûòÌÇ§ Ï∂îÍ∞Ä ------------
+------------------------------------
+
+
